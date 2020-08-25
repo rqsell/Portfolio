@@ -1,0 +1,15 @@
+body{
+    background-image: url("./photos/water.png");
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.contactbox{
+   
+    border: 3px solid blanchedalmond;
+    background: RGB(240, 128, 128);
+    
+}

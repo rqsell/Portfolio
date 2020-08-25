@@ -1,15 +1,28 @@
+*{
+    font-family: raleway;
+}
 body{
-    background-image: url("./photos/water.png");
+    background-image: url("../photos/water.png");
+    background-repeat: no-repeat;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-    position: relative;
-
+    margin-top: 25%;
 }
-.contactbox{
-   
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 45%;
     border: 3px solid blanchedalmond;
-    background: RGB(240, 128, 128);
-    
+    background: RGB(240, 128, 128);  
+}
+.contactbox a{
+    text-decoration: none;
+    color: black;
+
 }

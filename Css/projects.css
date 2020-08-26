@@ -1,0 +1,113 @@
+
+*{
+    font-family: raleway;
+}
+body{
+    margin: 10%;
+    /* display: flex; */
+    background-image: url("../photos/water.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: column;
+}
+
+#projects { 
+    display: flex;
+    background-color: RGB(240, 128, 128);
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border: 3px solid black;
+  
+}
+
+#projects img{
+height: 10vh;
+width: 10vw;
+border: 3px solid black;
+}
+
+.img-wrap {
+    position: relative;
+    height: 11vh;
+    width: 11vw;
+  }
+  
+  .img-description {
+    position: absolute;
+    font-style: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(127, 191, 63, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img-wrap:hover .img-description {
+    visibility: visible;
+    opacity: 1;
+  }
+  .img-wrap2 {
+    position: relative;
+    height: 11vh;
+    width: 11vw;
+  }
+  
+  .img-description2 {
+    position: absolute;
+    font-style: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(127, 191, 63, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img-wrap2:hover .img-description2 {
+    visibility: visible;
+    opacity: 1;
+  }
+  .img-wrap3 {
+    position: relative;
+    height: 11vh;
+    width: 11vw;
+  }
+  
+  .img-description3 {
+    position: absolute;
+    font-style: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(127, 191, 63, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img-wrap3:hover .img-description3 {
+    visibility: visible;
+    opacity: 1;
+  }

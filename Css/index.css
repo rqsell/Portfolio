@@ -90,11 +90,14 @@ body {
   position: relative;
   border: none;
   font-size: 2.5rem;
-  transform: rotate(-2deg)
+  transform: rotate(-2deg);
+
 }
 
 #rebeccaheady span {
   display: table-cell;
+  animation: jumb 0.4s infinite;
+  -webkit-animation: jumb 0.4s infinite;
 
 }
 
@@ -114,6 +117,8 @@ body {
     transform: translateY(0px)
   }
 }
+
+#rebeccaheady:hover span {}
 
 @media screen and (min-width: 770px) {
   #rebeccaheady:hover span {

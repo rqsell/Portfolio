@@ -1,21 +1,26 @@
-document.querySelector('.get-image').onclick= getImage;
+document.querySelector('.get-image').onclick = getImage;
+
 function getImage() {
-    axios.get("https://dog.ceo/api/breeds/image/random").then((res)=> {
-        document.querySelector(".images").innerHTML +=`<img src= "${res.data.message}"/>`
+    axios.get("https://dog.ceo/api/breeds/image/random").then((res) => {
+        document.querySelector(".images").innerHTML += `<img src= "${res.data.message}"/>`
     })
-    
-} 
 
-var request = require('superagent');
+}
 
-var clientID = '1eba11dd5728224e4393',
-    clientSecret = 'c89b30364999a2ed914e76f8a195fa76',
-    apiUrl = 'https://api.artsy.net/api/tokens/xapp_token',
-    xappToken;
+document.querySelector('.go-page-jada').onclick = gopage;
 
-request
-  .post(apiUrl)
-  .send({ client_id: clientID, client_secret: clientSecret })
-  .end(function(res) {
-    xappToken = res.body.token; 
-  });
+function gopage() {
+
+
+    axios.get('https://ironrest.herokuapp.com/mia-aug2020-webdevs').then((res) => {
+        console.log(res.data)
+        for (let i = 0; i < res.data.length; i++) {
+            first = res.data[i].first_name.charAt(0).toUpperCase() + res.data[i].first_name.slice(1);
+            last = res.data[i].last_name.charAt(0).toUpperCase() + res.data[i].last_name.slice(1);
+            console.log(res.data[i])
+            let person = res.data[i]
+            document.querySelector('.person').innerHTML += `<h2>${first} ${last}</h2> <a href="${person.website}">Portfolio </a> `
+
+        }
+    })
+}

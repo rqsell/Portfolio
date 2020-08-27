@@ -35,6 +35,10 @@
   }
 }
 
+.container {
+  margin: 2%;
+}
+
 body {
   background: url("../photos/Grey-Gradient-Background-6.jpg");
 

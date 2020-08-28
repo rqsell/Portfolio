@@ -24,3 +24,22 @@ function gopage() {
         }
     })
 }
+
+// //Artsy API
+// function getArt() {
+//     let artist = 'ana-mendieta'
+//     axios.post(`https://api.artsy.net/api/tokens/xapp_token?client_id=1eba11dd5728224e4393&client_secret=c89b30364999a2ed914e76f8a195fa76`).then((res) => {
+//         console.log(res.data)
+//         axios.get(`https://api.artsy.net/api/artists/${artist}`, {
+//             headers: {
+//                 'X-Xapp-Token': res.data.token
+
+//             }
+//         }).then(artist => {
+//             console.log(artist)
+//         })
+
+//     }).catch(error => console.log(error))
+
+// }
+// getArt();

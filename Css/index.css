@@ -94,12 +94,9 @@ body {
 
 }
 
+
 #rebeccaheady span {
   display: table-cell;
-  animation: jumb 0.4s infinite;
-  -webkit-animation: jumb 0.4s infinite;
-
-
 }
 
 @keyframes jumb {
@@ -119,10 +116,9 @@ body {
   }
 }
 
-#rebeccaheady:hover span {}
 
 @media screen and (min-width: 770px) {
-  #rebeccaheady:hover span {
+  #rebeccaheady span {
     animation: jumb 0.4s infinite;
     -webkit-animation: jumb 0.4s infinite;
   }
@@ -276,6 +272,11 @@ h2 {
   z-index: 10;
   background-color: #2196F3;
   color: #fff;
+}
+
+h2:hover {
+  color: RGB(240, 128, 128);
+  ;
 }
 
 .buttonbox a {

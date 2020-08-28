@@ -35,8 +35,15 @@ body {
 }
 
 #projects img {
-    height: 11vh;
+    height: 10vh;
     width: 11vw;
+}
+
+@media(max-width: 500px) {
+    #projects img {
+        height: pvh;
+        width: 11vw;
+    }
 }
 
 .img-wrap {

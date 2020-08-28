@@ -99,6 +99,7 @@ body {
   animation: jumb 0.4s infinite;
   -webkit-animation: jumb 0.4s infinite;
 
+
 }
 
 @keyframes jumb {
@@ -258,7 +259,7 @@ h2 {
   color: black;
   padding: 2rem;
   width: 33%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #mydiv {
